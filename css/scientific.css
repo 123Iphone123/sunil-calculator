@@ -1,0 +1,55 @@
+/* ---------- Scientific Buttons ---------- */
+.scientific-buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.sbtn {
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    background: #2c3454;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.sbtn:active {
+    transform: scale(.95);
+}
+
+.sbtn.clear { background: #d62839; }
+.sbtn.operator { background: #f6a313; }
+.sbtn.delete { background: #30395a; }
+
+/* ---------- Calculator Buttons ---------- */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+    padding-bottom: 20px;
+}
+
+.calculator-buttons .btn {
+    height: 56px;
+    border: none;
+    border-radius: 14px;
+    background: #2c3454;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.calculator-buttons .btn:active {
+    transform: scale(.95);
+}
+
+.calculator-buttons .operator { background: #f6a313; }
+.calculator-buttons .equal { background: #7c3aed; }

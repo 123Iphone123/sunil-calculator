@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scientific.css">
+</head>
+
+<body>
+
+<!-- Sidebar Menu with History -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h2>Menu</h2>
+        <button class="close-btn" id="closeBtn">✖</button>
+    </div>
+    <ul class="sidebar-links">
+        <li><a href="index.html">🧮 Basic Calculator</a></li>
+        <li><a href="scientific.html">🧪 Scientific Calculator</a></li>
+    </ul>
+
+    <!-- History Section -->
+    <div class="history-section">
+        <div class="history-header">
+            <h3>History</h3>
+            <button id="clearHistoryBtn" class="clear-history-btn">Clear</button>
+        </div>
+        <ul class="history-list" id="historyList">
+            <!-- History items yahan load hongi -->
+        </ul>
+    </div>
+</div>
+
+<header class="top-bar">
+    <button class="icon-btn" id="menuBtn">☰</button>
+    <h2>Scientific</h2>
+    <button class="icon-btn" id="themeBtn">🌙</button>
+</header>
+
+<main class="container">
+
+    <!-- Display -->
+    <div class="display">
+        <div class="expression" id="expression">0</div>
+        <div class="result" id="result">0</div>
+    </div>
+
+    <!-- Scientific Buttons -->
+    <div class="scientific-buttons">
+        <button class="sbtn">2nd</button>
+        <button class="sbtn">(</button>
+        <button class="sbtn">)</button>
+        <button class="sbtn">MC</button>
+        <button class="sbtn">M+</button>
+        <button class="sbtn">M-</button>
+        <button class="sbtn">x²</button>
+        <button class="sbtn">x³</button>
+        <button class="sbtn">xʸ</button>
+        <button class="sbtn">1/x</button>
+        <button class="sbtn">√</button>
+        <button class="sbtn">x!</button>
+        <button class="sbtn">sin</button>
+        <button class="sbtn">cos</button>
+        <button class="sbtn">tan</button>
+        <button class="sbtn">log</button>
+        <button class="sbtn">ln</button>
+        <button class="sbtn">eˣ</button>
+        <button class="sbtn">sinh</button>
+        <button class="sbtn">cosh</button>
+        <button class="sbtn">tanh</button>
+        <button class="sbtn">∛x</button>
+        <button class="sbtn">π</button>
+        <button class="sbtn">EE</button>
+        <button class="sbtn">Rad</button>
+        <button class="sbtn">Deg</button>
+        <button class="sbtn">Rand</button>
+        <button class="sbtn clear">AC</button>
+        <button class="sbtn delete">⌫</button>
+        <button class="sbtn operator">÷</button>
+    </div>
+
+    <!-- Calculator Buttons -->
+    <div class="calculator-buttons">
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn operator">×</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn operator">−</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn operator">+</button>
+        <button class="btn">%</button>
+        <button class="btn">0</button>
+        <button class="btn">.</button>
+        <button class="btn equal">=</button>
+    </div>
+
+</main>
+
+<!-- Bottom Navigation -->
+<nav class="bottom-nav">
+    <button class="nav-item" onclick="window.location.href='index.html'">
+        🧮<br>Basic
+    </button>
+    <button class="nav-item active" onclick="window.location.href='scientific.html'">
+        🧪<br>Scientific
+    </button>
+</nav>
+
+<script src="js/app.js"></script>
+<script src="js/scientific.js"></script>
+
+</body>
+</html>
